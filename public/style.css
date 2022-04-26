@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #28799c;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+h2 {
+  width: 600px;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 7%;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #555;
+  border: 2px solid rgba(27, 168, 255, 0.896);
+  border-radius: 30px;
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.img {
+  width: 100px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+.links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.links > div {
+  margin: 15px 25px;
+  cursor: pointer;
+}
+
+#input {
+  width: 250px;
+  height: 30px;
+  font-size: 24px;
+}
+
+.btn-redirect {
+  color: #fff;
+  background-color: #2d6cd0;
+  padding: 10px 25px;
+  border: 2px solid rgba(67, 190, 42, 0.427);
+  border-radius: 35px;
+  cursor: pointer;
+  margin-top: 30px;
+}
