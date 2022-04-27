@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirect</title>
+    <title>Что ты такое?</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="shortcut icon" href="4.png" type="image/png" />
   </head>
   <body>
     <div>
-      <div class="center"></div>
-      <div class="popup" onclick="myFunction()">
-        <p class="btn">Подсказка!</p>
-        <span class="popuptext" id="myPopup"
-          >Странное поле ввода. Все<br />
-          шо дальше читаешь? больше подсказок не будет, можешь идти по своим делам, ну ладно там в
-          коде очень странный поле ввода, не за что, удачи 😘
-        </span>
+      <div class="center">
+        <input id="input" />
+        <div class="links">
+          <div onclick="changeCompany('Apple')">Apple</div>
+          <div onclick="changeCompany('Samsing')">Samsing</div>
+          <div onclick="changeCompany('Xiaomi')">Xiaomi</div>
+        </div>
+        <div class="btn-redirect" onclick="redirect()">Отправить запрос</div>
+        <p style="font-size: large" id="message"></p>
+        <table class="phone"></table>
       </div>
     </div>
     <script src="/script.js"></script>
